@@ -1290,6 +1290,22 @@ importers:
         specifier: 4.128.0
         version: 4.128.0
 
+  apps/videos:
+    dependencies:
+      hono:
+        specifier: 4.13.5
+        version: 4.13.5
+    devDependencies:
+      '@repo/tools':
+        specifier: workspace:*
+        version: link:../../packages/tools
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      wrangler:
+        specifier: 4.128.0
+        version: 4.128.0
+
   apps/www:
     dependencies:
       '@repo/domain':

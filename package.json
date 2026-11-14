@@ -25,7 +25,17 @@
 		"syncpack": "15.3.2",
 		"turbo": "2.10.1",
 		"typescript": "6.0.3",
-		"vitest": "4.1.9"
+		"vitest": "4.1.9",
+		"wrangler": "^4.162.0"
 	},
-	"packageManager": "pnpm@10.14.0"
+	"packageManager": "pnpm@10.14.0",
+	"workspaces": [
+		"apps/*",
+		"packages/*",
+		"turbo/generators"
+	],
+	"trustedDependencies": [
+		"core-js-pure",
+		"unrs-resolver"
+	]
 }

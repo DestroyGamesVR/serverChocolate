@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "videos",
+  "main": "src/videos.app.ts",
+  "compatibility_date": "2026-06-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    "ENVIRONMENT": "development",
+    "TEST_VIDEO_URL": "https://zipline.ellinet13.com/u/4uZwaJ.mp4",
+    "VIDEOS_JSON": "[]"
+  }
+}

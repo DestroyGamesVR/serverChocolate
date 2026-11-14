@@ -1,0 +1,23 @@
+{
+  "name": "videos",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build:wrangler": "run-wrangler-build",
+    "check:types": "run-tsc",
+    "check:workers-types": "run-wrangler-types --check",
+    "deploy": "run-wrangler-deploy",
+    "dev": "run-wrangler-dev",
+    "fix:workers-types": "run-wrangler-types"
+  },
+  "dependencies": {
+    "hono": "4.13.5"
+  },
+  "devDependencies": {
+    "@repo/tools": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "wrangler": "4.128.0"
+  }
+}

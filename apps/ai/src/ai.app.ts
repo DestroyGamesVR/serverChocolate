@@ -194,17 +194,17 @@ const app = new Hono<App>()
 			// The build, not the version: every point release of 20260323 has the companion mode.
 			const build = await validateAndGetBuild(c.req.raw, await c.env.JWT_SECRET.get())
 			if (build === '20260323') {
-				return c.json({
-					success: false,
-					error_id: 'AI.InsufficientRoomieAICreditNoSub',
-					error: 'AI conversation is disabled. Roomie companion mode is available.',
-					value: {
-						MaxEnergyFromSubscriptions: 0,
-						EnergyLeft: 0,
-						OutputAudioEnabled: false,
-					},
-				})
-			}
+    return c.json({
+        success: true,
+        error_id: null,
+        error: null,
+        value: {
+            MaxEnergyFromSubscriptions: 2147483647,
+            EnergyLeft: 2147483647,
+            OutputAudioEnabled: false,
+        },
+    })
+}
 
 			return c.json({
 				success: true,
